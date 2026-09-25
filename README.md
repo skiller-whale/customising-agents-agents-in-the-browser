@@ -7,8 +7,8 @@ drive it in a headless browser and show you what it saw.
 
 ```bash
 npm ci
-npm run dev       # the app        → http://localhost:1002
-npm run reports   # run reports    → http://localhost:1004
+npm run dev       # the app        → http://localhost:3002
+npm run reports   # run reports    → http://localhost:3004
 ```
 
 Log in with **finn@fintech.example** / **glub-glub-1** (there is an admin,
@@ -35,7 +35,7 @@ node .claude/skills/flight-recorder/scripts/record.ts <run-id> <screenshot.png> 
 ```
 
 That files the screenshot under `runs/<run-id>/`, appends a line to that run's
-`steps.jsonl`, and rebuilds the report. Open **http://localhost:1004** and you
+`steps.jsonl`, and rebuilds the report. Open **http://localhost:3004** and you
 get a numbered screenshot trail for each run. Refresh while the agent works and
 you can watch the run grow.
 

@@ -28,7 +28,7 @@ Write each note for a colleague following along: "Submitted the transfer form - 
 
 Tell the user where to look:
 
-> Run recorded: http://localhost:1004/<run-id>/
+> Run recorded: http://localhost:3004/<run-id>/
 
 If the report server isn't running, they can start it with `npm run reports`.
 

@@ -31,7 +31,7 @@ app.post('/dev/reset', (c) => {
 
 app.use('/*', serveStatic({ root: './app/server/public' }))
 
-const port = Number(process.env.PORT ?? 1002)
+const port = Number(process.env.PORT ?? 3002)
 
 serve({ fetch: app.fetch, port, hostname: '0.0.0.0' }, (info) => {
   console.log(`FinTech is swimming on http://localhost:${info.port}`)
