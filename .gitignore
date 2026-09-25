@@ -1,0 +1,6 @@
+node_modules/
+
+# Recorded runs, and the browser's scratch files, are per-session output.
+runs/*
+!runs/.gitkeep
+.playwright-mcp/

@@ -1,0 +1,27 @@
+{
+  "name": "fintech-browser-workshop",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "FinTech - banking for fish. Toy app for the Agents in the Browser workshop.",
+  "scripts": {
+    "dev": "concurrently -n app,client -c cyan,magenta \"npm:dev:app\" \"npm:dev:client\"",
+    "dev:app": "tsx watch app/server/index.tsx",
+    "dev:client": "node scripts/build-client.ts --watch",
+    "build:client": "node scripts/build-client.ts",
+    "reports": "node .claude/skills/flight-recorder/scripts/serve-runs.ts",
+    "seed": "./scripts/seed.sh",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.14.0",
+    "hono": "^4.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "concurrently": "^9.1.0",
+    "esbuild": "^0.25.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}
