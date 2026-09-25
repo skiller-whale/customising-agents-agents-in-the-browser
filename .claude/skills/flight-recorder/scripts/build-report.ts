@@ -91,5 +91,5 @@ export function buildReport(): void {
 if (import.meta.filename === process.argv[1]) {
   buildReport()
   const count = listRunIds().length
-  console.log(`Built reports for ${count} run${count === 1 ? '' : 's'} → http://localhost:1004/`)
+  console.log(`Built reports for ${count} run${count === 1 ? '' : 's'} → http://localhost:3004/`)
 }

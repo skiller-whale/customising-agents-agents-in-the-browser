@@ -1,6 +1,6 @@
 /**
  * Serves the run reports so you can see what the headless browser saw.
- *   npm run reports   →   http://localhost:1004/
+ *   npm run reports   →   http://localhost:3004/
  */
 import { createServer } from 'node:http'
 import { createReadStream, existsSync, statSync } from 'node:fs'
@@ -8,7 +8,7 @@ import { extname, join, normalize } from 'node:path'
 import { RUNS_DIR } from './runs.ts'
 import { buildReport } from './build-report.ts'
 
-const PORT = Number(process.env.REPORTS_PORT ?? 1004)
+const PORT = Number(process.env.REPORTS_PORT ?? 3004)
 
 // So there is something to look at before the first run is recorded.
 buildReport()

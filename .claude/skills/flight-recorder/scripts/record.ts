@@ -44,4 +44,4 @@ appendFileSync(join(runDir, 'steps.jsonl'), `${JSON.stringify(step)}\n`)
 
 buildReport()
 console.log(`Recorded step ${n} of run ${runId}: ${note}`)
-console.log(`Report: http://localhost:1004/${runId}/`)
+console.log(`Report: http://localhost:3004/${runId}/`)
